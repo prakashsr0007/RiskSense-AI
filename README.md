@@ -241,8 +241,7 @@ This system encourages **honest usage and long-term trust**.
 All checks are combined into a **Final Risk Score**:
 
 ```python
-Final Risk Score =
-  (Device Risk * 0.2)  +  (Sensor Mismatch * 0.2)  +  (LSTM Anomaly * 0.3) +  (Geo Validation * 0.1) +  (Group Fraud * 0.2)
+Final Risk Score = (Device Risk * 0.2)  +  (Sensor Mismatch * 0.2)  +  (LSTM Anomaly * 0.3) +  (Geo Validation * 0.1) +  (Group Fraud * 0.2)
 ```
 
 ---
