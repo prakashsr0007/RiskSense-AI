@@ -236,6 +236,17 @@ This system encourages **honest usage and long-term trust**.
 
 ---
 
+## AI RISK SCORING SYSTEM
+
+All checks are combined into a **Final Risk Score**:
+
+```python
+Final Risk Score =
+  (Device Risk * 0.2)  +  (Sensor Mismatch * 0.2)  +  (LSTM Anomaly * 0.3) +  (Geo Validation * 0.1) +  (Group Fraud * 0.2)
+```
+
+---
+
 ## System Architecture
 
 ```
@@ -292,18 +303,9 @@ RiskSense AI is not just a technical solution. It is a system designed to provid
 **Predicting risks early, protecting earnings always.**
 
 ---
-
-## ⚖️ AI RISK SCORING SYSTEM
-
-All checks are combined into a **Final Risk Score**:
-
-```python
-Final Risk Score =
-  (Device Risk * 0.2)  +  (Sensor Mismatch * 0.2)  +  (LSTM Anomaly * 0.3) +  (Geo Validation * 0.1) +  (Group Fraud * 0.2)
-```
----
-## AI RUDHRA's Goal
+## RISKSENSE AI's Goal
 
 To build a system where: **no one delivery worker loses income due to conditions beyond their control.**
 
 ---
+by **TEAM AI RUDHRA**
