@@ -112,7 +112,6 @@ The system checks device integrity by detecting:
 * Developer mode usage
 * Rooted or modified devices
 
----
 
 ### 2. Sensor Fusion
 
@@ -125,7 +124,6 @@ Instead of trusting GPS alone, the system compares:
 
 Any mismatch between these signals indicates **suspicious behavior**.
 
----
 
 ### 3. Movement Pattern Analysis (LSTM Model)
 
@@ -139,7 +137,6 @@ It learns normal behavior and detects:
 
 This produces an **anomaly score**, representing how unusual the behavior is.
 
----
 
 ### 4. Geo-Fencing and Weather Validation
 
@@ -150,7 +147,6 @@ The system verifies whether:
 
 If the location does not match real-world data, it is flagged as **invalid**.
 
----
 
 ### 5. Group Fraud Detection
 
@@ -162,7 +158,6 @@ The system identifies coordinated fraud by analyzing:
 
 This helps prevent **organized misuse of the system**.
 
----
 
 ### 6. Server-Side Security
 
@@ -286,21 +281,29 @@ This enables **accurate and real-time fraud detection** while protecting genuine
 
 ---
 
-## Our Goal
-
-To build a system where:
-
-**no delivery worker loses income due to conditions beyond their control.**
-
----
-
 ## Final Message
 
-RiskSense AI is not just a technical solution.
-It is a system designed to provide:
+RiskSense AI is not just a technical solution. It is a system designed to provide:
 
 * **Financial security**
 * **Confidence during uncertain conditions**
 * **Reliable support for gig workers**
 
 **Predicting risks early, protecting earnings always.**
+
+---
+
+## ⚖️ AI RISK SCORING SYSTEM
+
+All checks are combined into a **Final Risk Score**:
+
+```python
+Final Risk Score =
+  (Device Risk * 0.2)  +  (Sensor Mismatch * 0.2)  +  (LSTM Anomaly * 0.3) +  (Geo Validation * 0.1) +  (Group Fraud * 0.2)
+```
+---
+## AI RUDHRA's Goal
+
+To build a system where: **no one delivery worker loses income due to conditions beyond their control.**
+
+---
