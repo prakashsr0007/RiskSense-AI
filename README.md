@@ -344,7 +344,8 @@ Honor Score System
         ▼
 Payout / Monitoring
 ```
-<img width="1152" height="768" alt="architecture" src="https://github.com/user-attachments/assets/860b5587-29d8-45eb-9a62-4e56faddfd0c" />
+<img width="1528" height="805" alt="architecture" src="https://github.com/user-attachments/assets/d548d8e1-fccc-4a76-bc28-e722b86a4807" />
+
 
 ---
 
