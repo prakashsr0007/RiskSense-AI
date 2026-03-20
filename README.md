@@ -71,6 +71,45 @@ This ensures **speed, transparency, and reliability**.
 
 ---
 
+## Example Scenario :
+
+Consider a delivery rider working in a city during **heavy rainfall**.
+
+### System Observation
+
+- The system detects **rainfall above defined threshold levels**  
+- The rider’s activity shows **reduced or no movement**  
+- GPS, sensor data, and environmental data are continuously validated  
+
+
+### Case 1: Genuine User
+
+- Movement patterns are **natural and consistent**  
+- Location correctly matches **real weather conditions**  
+- Risk score remains **low**
+
+> **Payout is approved instantly**
+
+
+### Case 2: Fake GPS Attempt
+
+- GPS shows rider inside a **high-risk (flood) zone**  
+- Sensor data indicates **no real physical movement**  
+- LSTM detects **abnormal movement patterns**
+
+> **Risk score increases and verification is triggered**
+
+
+### Case 3: Coordinated Fraud
+
+- Multiple users appear in the **same high-risk location**  
+- Claims are made at **similar timestamps**  
+- Behavior patterns show strong similarity  
+
+> **System detects group fraud and blocks claims**
+
+---
+
 ## Weekly Membership Model
 
 RiskSense AI follows a **simple weekly subscription system**.
@@ -83,6 +122,23 @@ RiskSense AI follows a **simple weekly subscription system**.
 * Matches the **earning pattern of gig workers**
 * Keeps the system **affordable and flexible**
 * Ensures **continuous protection without long-term commitment**
+
+---
+
+## Technology Stack
+
+RiskSense AI is built using a combination of **scalable backend systems** and **intelligent AI models** to ensure reliability and performance.
+
+### Core Technologies
+
+- **Backend**: Python / Node.js for API handling and system processing  
+- **Machine Learning**: LSTM (time-series model) for movement anomaly detection  
+- **Data Processing**: Real-time streaming of GPS and sensor data  
+- **APIs**: Weather API for environmental condition validation  
+- **Database**: MongoDB / PostgreSQL for storing user and activity data  
+- **Security**: JWT-based authentication and secure API communication  
+
+-> This stack ensures the system is **scalable, reliable, and capable of real-time decision-making**.
 
 ---
 
@@ -243,6 +299,21 @@ All checks are combined into a **Final Risk Score**:
 ```python
 Final Risk Score = (Device Risk * 0.2)  +  (Sensor Mismatch * 0.2)  +  (LSTM Anomaly * 0.3) +  (Geo Validation * 0.1) +  (Group Fraud * 0.2)
 ```
+---
+
+## Implementation Insight :
+
+The LSTM model is trained on **time-series movement data**, including:
+- Latitude and longitude sequences  
+- Speed and direction variations  
+- Time intervals between movements  
+
+### How It Works
+- The system uses a **sliding window approach** to continuously analyze recent activity  
+- Current movement is compared with **learned normal behavior patterns**  
+- An **anomaly score** is generated to represent deviation.
+
+This anomaly score is then combined with other signals inside the **AI Risk Scoring Engine** to make final decisions.
 
 ---
 
@@ -273,6 +344,25 @@ Honor Score System
         ▼
 Payout / Monitoring
 ```
+
+---
+
+## System Design Strength :
+
+RiskSense AI follows a **multi-layered defense architecture**.
+
+### Key Design Principles
+
+- Each layer validates a **different aspect of user behavior**  
+- There is **no single point of failure**  
+- Detection operates in **real-time with adaptive learning**  
+
+### Outcome
+
+This design ensures the system is:
+- **Resilient against simple spoofing attacks**  
+- **Capable of detecting advanced and coordinated fraud**  
+- **Reliable for real-world deployment scenarios**
 
 ---
 
